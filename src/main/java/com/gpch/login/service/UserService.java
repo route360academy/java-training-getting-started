@@ -14,9 +14,9 @@ import java.util.HashSet;
 @Service("userService")
 public class UserService {
 
-    private UserRepository userRepository;
-    private RoleRepository roleRepository;
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
     public UserService(UserRepository userRepository,
